@@ -1,49 +1,23 @@
-### Code Generation Agent
-- **Purpose**: Generate React Native components and utilities
-- **Scope**: TypeScript/JavaScript, React Native components, utility functions
-- **Guidelines**: 
-  - Minimal styling approach
-  - Android-first development
-  - Clean, readable code without excessive comments
+## Commit & PR Rules
 
-## Development Standards
+- Use **conventional commit prefixes**: `feat:`, `fix:`, `refactor:`, `test:`, `docs:`, `chore:`.
+- Keep commits **small and focused**. Avoid mixing unrelated changes.
+- Every PR must include:
+  - A short summary of the change.
+  - Confirmation that **tests pass** and **build succeeds**.
+  - Notes on breaking changes or migration steps (if any).
 
-### Naming Conventions
-- **PascalCase**: Component names, interfaces, type aliases
-- **camelCase**: Variables, functions, methods
-- **underscore prefix**: Private class members
-- **ALL_CAPS**: Constants
+## Functions
 
-### Code Style
-- Minimal styling approach
-- Android-first development
-- TypeScript for type safety
-- Functional components with hooks
+- Each function should have a single responsibility.
+- Keep functions short and focused.
+- Always specify argument and return types in TypeScript.
+- Use `async/await` for asynchronous code.
+- Function names must clearly describe their purpose.
 
-### File Organization
-- Components in `/src/components/`
-- Screens in `/src/screens/`
-- Utilities in `/src/utils/`
-- Types in `/src/types/`
+## Performance & Safety
 
-## Agent Instructions
+- Avoid deep nesting by extracting helper functions.
 
-### When generating React Native code:
-1. Use TypeScript
-2. Prefer functional components with hooks
-3. Keep styling minimal and clean
-4. Ensure Android compatibility
-5. Follow the established naming conventions
-6. Add proper type definitions
-
-### When modifying existing code:
-1. Maintain consistency with existing patterns
-3. Preserve functionality while improving structure
-
-
-### When adding new features:
-1. Follow the established project structure
-2. Add appropriate TypeScript types
-3. Include basic error handling
-4. Consider performance implications
-5. Maintain the minimal styling approach
+Design and refine the User interface (UI) and User experience (UX) according to your brand and the user needs.
+React Native has component libraries like React Native Elements for designing interface in consistent and aesthetically good way.
